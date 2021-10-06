@@ -17,7 +17,7 @@ public class FrontController {
     }
 
     @GetMapping("/createfood")
-    public String page1(){
+    public String createFood(){
         return "createfoodform";
     }
 }
