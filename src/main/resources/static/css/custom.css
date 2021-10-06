@@ -1,14 +1,26 @@
 html,body{
     height: 100%;
+    background-image: url("../img/eggplant.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 body{
     display: flex;
     flex-direction: column;
 }
 
 .btn-primary {
-    background-color: orange;
+    background-color: #FF9D5C;
+}
+.btn-primary:hover{
+    background-color: #FF781F;
+}
+.btn-secondary{
+    background-color: #45ada1;
+}
+
+.btn-secondary:hover{
+    background-color: #114d4d;
 }
 
 .btn {
@@ -39,6 +51,7 @@ section {
 }
 .form-floating{
     position: relative;
+    padding-bottom: 5px;
 }
 
 .form-control{

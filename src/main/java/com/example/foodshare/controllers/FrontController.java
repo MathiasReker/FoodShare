@@ -10,4 +10,9 @@ public class FrontController {
     public String index(){
         return "index";
     }
+
+    @GetMapping("/createUser")
+    public String createUser(){
+        return "createuser";
+    }
 }
