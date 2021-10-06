@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>foodshare A/S</title>
@@ -11,11 +11,7 @@
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
-<header class="sticky-top">
-    <div>
-        <h1>foodshare</h1>
-    </div>
-</header>
+<div th:replace="fragments/header :: header">&nbsp</div>
 <main class="login">
     <form class="form-signin container">
         <div class="form-floating">
@@ -38,14 +34,6 @@
         </div>
     </form>
 </main>
-<footer class="footer">
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <span class="text-muted">© 2021 foodshare, A/S</span>
-            </div>
-        </footer>
-    </div>
-</footer>
+<div th:replace="fragments/footer :: footer">&nbsp</div>
 </body>
 </html>
