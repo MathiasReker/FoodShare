@@ -11,7 +11,7 @@
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
-<div class="index-wrap"><img class="background-image" src="../img/eggplant.svg" alt=""></div>
+<div th:replace="fragments/background :: background">&nbsp</div>
 <div th:replace="fragments/header :: header">&nbsp</div>
 <main class="login index-wrap">
     <form class="form-signin container">
