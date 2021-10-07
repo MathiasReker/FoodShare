@@ -15,4 +15,9 @@ public class FrontController {
     public String createUser(){
         return "createuser";
     }
+
+    @GetMapping("/createfood")
+    public String createFood(){
+        return "createfoodform";
+    }
 }

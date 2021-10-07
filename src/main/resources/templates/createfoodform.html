@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foodshare A/S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" th:href="@{/css/custom.css}">
+</head>
+<body>
+<main class="login">
+    <form class="form-signin container">
+        <div class="form-floating">
+            <input type="text" id="floatingfood" class="form-control" placeholder="food" required>
+            <label for="floatingfood">food type</label>
+        </div>
+        <select class="form-select" aria-label="select quantity">
+            <option selected>quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="3">7</option>
+            <option value="4">8</option>
+            <option value="5">9</option>
+            <option value="6">10</option>
+        </select>
+        <div class="form-floating">
+            <input type="date" id="floatingdate" class="form-control" placeholder="expiring date" required>
+            <label for="floatingdate">expiring date</label>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary">confirm</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary">cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+</html>

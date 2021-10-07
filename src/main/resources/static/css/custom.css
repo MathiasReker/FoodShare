@@ -64,3 +64,7 @@ section {
 .col {
     margin: 2rem 0rem 2rem 0rem;
 }
+.form-select{
+    margin-bottom: 5px;
+    line-height: 2;
+}
