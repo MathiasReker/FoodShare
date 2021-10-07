@@ -14,22 +14,25 @@
 <div th:replace="fragments/header :: header">&nbsp</div>
 <main class="lobby">
     <div>
-     <div class="row">
-        <div class="col-6">myfoods</div>
-        <div class="col-6">market</div>
-     </div>
-        <div>
-            <div>
-                <form>
-                    <input type="search" autofocus placeholder="bananas, orange, apple, bread, milk, eggs etc... " id="search-input">
-                    <button class="search-btn">search</button>
-                </form>
-
-            </div>
-       <ul>
-           <li>bla</li>
-       </ul>
+        <div class="row">
+            <div class="col-6">myfoods</div>
+            <div class="col-6">market</div>
         </div>
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="input-group mb-3"><input type="text" class="form-control input-text"
+                                                         placeholder="search foods..">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-warning btn-lg search-btn" type="button">x</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li>bla</li>
+        </ul>
     </div>
 </main>
 <div th:replace="fragments/footer :: footer">&nbsp</div>
