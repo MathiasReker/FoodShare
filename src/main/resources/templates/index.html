@@ -11,8 +11,9 @@
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
+<div class="index-wrap"><img class="background-image" src="../img/eggplant.svg" alt=""></div>
 <div th:replace="fragments/header :: header">&nbsp</div>
-<main class="login">
+<main class="login index-wrap">
     <form class="form-signin container">
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingEmail" placeholder="email" required autofocus>
@@ -35,5 +36,6 @@
     </form>
 </main>
 <div th:replace="fragments/footer :: footer">&nbsp</div>
+
 </body>
 </html>

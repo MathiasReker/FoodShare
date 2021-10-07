@@ -11,8 +11,9 @@
   <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
+<div class="index-wrap"><img class="background-image" src="../img/eggplant.svg" alt=""></div>
 <div th:replace="fragments/header :: header">&nbsp</div>
-<main class="login">
+<main class="login index-wrap">
   <form class="form-signin container" oninput="pass2.setCustomValidity(pass1.value != pass2.value ? 'Passwords do not match.' : '')">
     <div class="form-floating">
       <input type="text" id="floatingName" class="form-control" placeholder="firstname" required>

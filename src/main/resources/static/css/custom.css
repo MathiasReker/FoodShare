@@ -1,12 +1,26 @@
 html,body{
     height: 100%;
-    background-image: url("../img/eggplant.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(#fff, #79D0C6);
+    position: relative;
 }
 body{
     display: flex;
     flex-direction: column;
+}
+
+.background-image{
+    opacity: 0.1;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.index-wrap{
+    position: relative;
 }
 
 .btn-primary {
@@ -61,7 +75,7 @@ section {
     width: 100%;
     line-height: 2;
     background-color: white;
-    border: 1px solid #f8c146
+    border: 1px solid #79D0C6
 }
 
 .form-select{
@@ -69,19 +83,44 @@ section {
     line-height: 2;
 }
 
-.btn:hover {
-    color: #fff
-}
-
 .input-text:focus {
     box-shadow: 0px 0px 0px;
-    border-color: #f8c146;
+    border-color: #79D0C6;
     outline: 0px
 }
 
 .search-btn{
+    border-color: #79D0C6;
+    color: #79D0C6;
+    background-color: #fff;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+}
+
+.search-btn:hover{
+    background-color: #79D0C6;
+    color: #114d4d;
+    border-color: #79D0C6;
+}
+
+.market-tabs{
+    border: solid #79D0C6 1px;
+    background-color: #a9a9a9;
+    text-align: center;
+}
+
+.market-row {
+    padding-bottom: 10px;
+}
+
+.active{
+    background-color: #114d4d;
+    border-color: #114d4d;
+    color: #fff;
+}
+
+.icon-align {
+    vertical-align: text-bottom;
 }
 
 .pd50{

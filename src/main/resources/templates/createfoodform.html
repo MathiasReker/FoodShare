@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>foodshare A/S</title>
@@ -11,7 +11,9 @@
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
-<main class="login">
+<div class="index-wrap"><img class="background-image" src="../img/eggplant.svg" alt=""></div>
+<div th:replace="fragments/header :: header">&nbsp</div>
+<main class="login index-wrap">
     <form class="form-signin container">
         <div class="form-floating">
             <input type="text" id="floatingfood" class="form-control" placeholder="food" required>
@@ -46,5 +48,6 @@
         </div>
     </form>
 </main>
+<div th:replace="fragments/footer :: footer">&nbsp</div>
 </body>
 </html>
