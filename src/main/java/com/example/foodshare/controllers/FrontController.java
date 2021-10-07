@@ -20,4 +20,9 @@ public class FrontController {
     public String createFood(){
         return "createfoodform";
     }
+
+    @GetMapping("/market")
+    public String market(){
+        return "market";
+    }
 }

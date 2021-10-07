@@ -16,11 +16,11 @@ body{
     background-color: #FF781F;
 }
 .btn-secondary{
-    background-color: #45ada1;
+    background-color: gray;
 }
 
 .btn-secondary:hover{
-    background-color: #114d4d;
+    background-color: darkgray;
 }
 
 .btn {
