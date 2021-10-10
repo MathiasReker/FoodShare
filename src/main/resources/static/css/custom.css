@@ -1,4 +1,4 @@
-html,body{
+html,body {
     height: 100%;
     background: linear-gradient(#fff, #79D0C6);
     position: relative;
@@ -9,14 +9,12 @@ body{
 }
 
 .background-image{
-    opacity: 0.1;
     top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: auto;
 }
 
 .index-wrap{
@@ -47,7 +45,6 @@ body{
 
 header {
     text-align: center;
-    border-bottom: solid;
     background-color: #114d4d;
     color: white;
 }
@@ -129,4 +126,9 @@ section {
 
 .inline-block{
     padding: 5px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
 }
