@@ -1,3 +1,3 @@
 # FoodShare
 
-https://foodshare2.herokuapp.com/market
+https://foodshare2.herokuapp.com/
