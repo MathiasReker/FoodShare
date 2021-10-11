@@ -36,16 +36,16 @@
             <input type="date" id="floatingdate" class="form-control" placeholder="expiring date" required>
             <label for="floatingdate">expiring date</label>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-primary btn-form">confirm</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-secondary btn-form">cancel</button>
-                </div>
+
+        <div class="row" style="padding-top: 20px">
+            <div class="btn-group col-6">
+                <button class="btn btn-primary btn-form">Confirm</button>
+            </div>
+            <div class="btn-group col-6">
+                <button class="btn btn-secondary btn-form">Cancel</button>
             </div>
         </div>
+
     </form>
 </main>
 <div th:replace="fragments/footer :: footer">&nbsp</div>
