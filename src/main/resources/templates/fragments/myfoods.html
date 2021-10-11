@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="lobby index-wrap" th:fragment="myfoods">
+    <div class="container">
+        <div class="row market-row">
+            <div class="col-6 market-tabs active">
+                <a onclick="changeHtml('/my-foods')">myfoods</a>
+            </div>
+            <div class="col-6 market-tabs">
+                <a onclick="changeHtml('/market-fragment')">market</a>
+            </div>
+        </div>
+
+        <ul th:each="post: ${postList}">
+            <li style="list-style: none">
+                <div class="container container-post">
+                    <div class="row">
+                        <div class="col-6">
+                            <div th:text="${post.getFoodType() + ' x' + post.getQuantity()}">
+                            </div>
+                        </div>
+                        <div class="col" style="text-align: right">
+                            <button class="material-icons icon-align btn btn-icon btn-secondary">
+                                &#xE745;
+                            </button>
+                            <button class="material-icons icon-align btn btn-icon btn-success">
+                                &#xEA70;
+                            </button>
+                            <button class="material-icons icon-align btn btn-icon btn-danger" onclick="confirm('Are you sure?');">
+                                &#xE872;
+                            </button>
+                            <button class="material-icons icon-align btn btn-icon btn-info">
+                                &#xE7FD;  &#xE510;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-b">
+                        <div class="col-6">
+                            <div th:text="'creation date: ' + ${post.getCreationDate()}"></div>
+                        </div>
+                        <div class="col-6">
+                            <div th:text="'expiring date: ' +${post.getExpiringDate()}"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+</div>
+
+
+<a href="/create-food" class="float">
+    <i class="material-icons my-float">&#xE145;</i>
+</a>
+
+</html>
