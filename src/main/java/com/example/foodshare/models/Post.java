@@ -5,16 +5,24 @@ import java.time.LocalDate;
 
 public class Post {
 
-  private Image img;
-  private String description;
-  private String foodType;
-  private int quantity;
-  private String user;
-  private String location;
-  private LocalDate creationDate;
-  private LocalDate expiringDate;
+  private final Image img;
+  private final String description;
+  private final String foodType;
+  private final int quantity;
+  private final String user;
+  private final String location;
+  private final LocalDate creationDate;
+  private final LocalDate expiringDate;
 
-  public Post(Image img, String description, String foodType, int quantity, String user, String location, LocalDate creationDate, LocalDate expiringDate) {
+  public Post(
+      Image img,
+      String description,
+      String foodType,
+      int quantity,
+      String user,
+      String location,
+      LocalDate creationDate,
+      LocalDate expiringDate) {
     this.img = img;
     this.description = description;
     this.foodType = foodType;

@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html class="html-form" lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>foodshare A/S</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" th:href="@{/css/custom.css}">
+    <meta charset="UTF-8">
+    <title>foodshare A/S</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
-<div class="index-wrap"><img class="background-image" src="../img/eggplant.svg" alt=""></div>
+<div class="index-wrap"><img alt="" class="background-image" src="../img/eggplant.svg"></div>
 <div th:replace="fragments/header :: header">&nbsp</div>
 <main class="login index-wrap">
-  <form class="form-signin container" oninput="pass2.setCustomValidity(pass1.value != pass2.value ? 'Passwords do not match.' : '')">
-    <div class="form-floating">
-      <input type="text" id="floatingName" class="form-control" placeholder="first name" required>
-      <label for="floatingName">first name</label>
-    </div>
-    <div class="form-floating">
-      <input type="text" id="floatingLname" class="form-control" placeholder="last name" required>
-      <label for="floatingLname">last name</label>
-    </div>
-    <div class="form-floating">
-      <input type="email" id="floatingEmail" class="form-control" placeholder="email" required>
-      <label for="floatingEmail">email</label>
-    </div>
-    <div class="form-floating">
-      <input type="text" id="floatingAddress" class="form-control" placeholder="address" required>
-      <label for="floatingAddress">address</label>
-    </div>
-    <div class="form-floating">
-      <input type="tel" id="floatingPhone" class="form-control" placeholder="phonenumber" required>
-      <label for="floatingPhone">phonenumber</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" id="floatingPass" name="pass1" class="form-control" placeholder="password" required>
-      <label for="floatingPass">password very secure</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" id="floatingConfirmPass" name="pass2" class="form-control" placeholder="confirm password" required>
-      <label for="floatingConfirmPass">confirm password</label>
-    </div>
+    <form class="form-signin container"
+          oninput="pass2.setCustomValidity(pass1.value != pass2.value ? 'Passwords do not match.' : '')">
+        <div class="form-floating">
+            <input class="form-control" id="floatingName" placeholder="first name" type="text">
+            <label for="floatingName">first name</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingLname" placeholder="last name" type="text">
+            <label for="floatingLname">last name</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingEmail" placeholder="email" type="email">
+            <label for="floatingEmail">email</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingAddress" placeholder="address" type="text">
+            <label for="floatingAddress">address</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingPhone" placeholder="phonenumber" type="tel">
+            <label for="floatingPhone">phonenumber</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingPass" name="pass1" placeholder="password" type="password">
+            <label for="floatingPass">password very secure</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" id="floatingConfirmPass" name="pass2" placeholder="confirm password"
+                   required type="password">
+            <label for="floatingConfirmPass">confirm password</label>
+        </div>
 
-    <div class="row" style="padding-top: 20px">
-      <div class="btn-group col-6">
-        <button class="btn btn-primary btn-form">Confirm</button>
-      </div>
-      <div class="btn-group col-6">
-        <button class="btn btn-secondary btn-form">Cancel</button>
-      </div>
-    </div>
+        <div class="row" style="padding-top: 20px">
+            <div class="btn-group col-6">
+                <button class="btn btn-primary btn-form">Confirm</button>
+            </div>
+            <div class="btn-group col-6">
+                <button class="btn btn-secondary btn-form">Cancel</button>
+            </div>
+        </div>
 
-  </form>
+    </form>
 </main>
 <div th:replace="fragments/footer :: footer">&nbsp</div>
 </body>
