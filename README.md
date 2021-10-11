@@ -1,3 +1,3 @@
 # FoodShare
 
-https://foodshare2.herokuapp.com/
+Link: [foodshare](https://foodshare2.herokuapp.com/).
