@@ -1,17 +1,18 @@
-html,body {
+html, body {
     height: 100%;
     background: linear-gradient(#fff, #79D0C6);
     position: relative;
     min-height: 100%;
     overflow-y: scroll;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-.background-image{
+.background-image {
     top: 50px;
     left: 0;
     right: 0;
@@ -21,7 +22,7 @@ body{
     height: 100vh;
 }
 
-.index-wrap{
+.index-wrap {
     position: relative;
 }
 
@@ -29,14 +30,16 @@ body{
     background-color: #FF9D5C;
 
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #FF781F;
 }
-.btn-secondary{
+
+.btn-secondary {
     background-color: gray;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: darkgray;
 }
 
@@ -44,7 +47,6 @@ body{
     border: none;
     width: 100%;
     height: 100%;
-
 }
 
 header {
@@ -54,10 +56,10 @@ header {
 }
 
 section {
-    padding: 0rem 4rem 0rem 4rem;  
+    padding: 0rem 4rem 0rem 4rem;
 }
 
-.form-signin{
+.form-signin {
     max-width: 500px;
 }
 
@@ -66,12 +68,13 @@ section {
     align-items: center;
     margin: auto 0 auto 0;
 }
-.form-floating{
+
+.form-floating {
     position: relative;
     padding-bottom: 5px;
 }
 
-.form-control{
+.form-control {
     display: block;
     width: 100%;
     line-height: 2;
@@ -79,7 +82,7 @@ section {
     border: 1px solid #79D0C6
 }
 
-.form-select{
+.form-select {
     margin-bottom: 5px;
     line-height: 2;
 }
@@ -90,7 +93,7 @@ section {
     outline: 0px
 }
 
-.search-btn{
+.search-btn {
     border-color: #79D0C6;
     color: #79D0C6;
     background-color: #fff;
@@ -98,13 +101,13 @@ section {
     border-top-left-radius: 0;
 }
 
-.search-btn:hover{
+.search-btn:hover {
     background-color: #79D0C6;
     color: #114d4d;
     border-color: #79D0C6;
 }
 
-.market-tabs{
+.market-tabs {
     border: solid #79D0C6 1px;
     background-color: #a9a9a9;
     text-align: center;
@@ -114,7 +117,7 @@ section {
     padding-bottom: 10px;
 }
 
-.active{
+.active {
     background-color: #114d4d;
     border-color: #114d4d;
     color: #fff;
@@ -124,15 +127,15 @@ section {
     vertical-align: text-bottom;
 }
 
-.pd50{
+.pd50 {
     padding-top: 10px;
 }
 
-.inline-block{
+.inline-block {
     padding: 5px;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
 }
