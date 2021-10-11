@@ -1,12 +1,19 @@
-html, body {
-    height: 100%;
-    background: linear-gradient(#fff, #79D0C6);
+html {
+
+
     position: relative;
     min-height: 100%;
-    overflow-y: scroll;
+
+
+}
+
+.html-form {
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
+    background: linear-gradient(#fff, #79D0C6);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -76,7 +83,7 @@ section {
 
 .form-control {
     display: block;
-    width: 100%;
+    height: 100%;
     line-height: 2;
     background-color: white;
     border: 1px solid #79D0C6

@@ -16,12 +16,12 @@ public class FrontController {
         return "index";
     }
 
-    @GetMapping("/createUser")
+    @GetMapping("/create-user")
     public String createUser(){
         return "createuser";
     }
 
-    @GetMapping("/createfood")
+    @GetMapping("/create-food")
     public String createFood(){
         return "createfoodform";
     }
@@ -32,5 +32,21 @@ public class FrontController {
         List<Post> posts = postService.getPosts();
         model.addAttribute("postList", posts);
         return "market";
+    }
+
+    @GetMapping("/market-fragment")
+    public String market2(Model model){
+        PostService postService = new PostService();
+        List<Post> posts = postService.getPosts();
+        model.addAttribute("postList", posts);
+        return "fragments/market-fragment :: market-fragments";
+    }
+
+    @GetMapping("/my-foods")
+    public String myFoods(Model model){
+        PostService postService = new PostService();
+        List<Post> posts = postService.getPosts();
+        model.addAttribute("postList", posts);
+        return "fragments/myfoods";
     }
 }
