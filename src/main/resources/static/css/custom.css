@@ -171,17 +171,25 @@ section {
 .title {
     display: flex;
     justify-content: center;
+    font-size: 30px;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a {
+    color: inherit;
 }
 
 * {
     padding: 0;
     margin: 0;
-}
-
-body {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 18px;
-    background-color: #CCC;
 }
 
 .float {
@@ -204,4 +212,28 @@ body {
 
 .my-float {
     font-size: 60px;
+}
+
+.image-frame {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.image-form {
+    max-width: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: scale-down;
+    vertical-align: middle
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

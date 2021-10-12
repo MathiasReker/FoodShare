@@ -6,27 +6,29 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
     <script crossorigin="anonymous"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
     </script>
     <link rel="stylesheet" th:href="@{/css/custom.css}">
 </head>
 <body>
 <header class="sticky-top" th:fragment="header">
-    <div class="title">
-        <svg height="40.000000pt" preserveAspectRatio="xMidYMid meet"
-             viewBox="0 0 500.000000 500.000000" width="40.000000pt"
-             xmlns="http://www.w3.org/2000/svg">
+    <a href="/">
+        <span class="title">
+            <svg height="40.000000pt" preserveAspectRatio="xMidYMid meet"
+                 viewBox="0 0 500.000000 500.000000" width="40.000000pt"
+                 xmlns="http://www.w3.org/2000/svg">
 
-            <g stroke="none"
-               transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
-                <path d="M2241 4739 l-73 -79 43 -52 c46 -55 50 -61 87 -128 27 -48 52 -124
+                <g stroke="none"
+                   transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
+                    <path d="M2241 4739 l-73 -79 43 -52 c46 -55 50 -61 87 -128 27 -48 52 -124
                 52 -156 0 -16 -16 -30 -66 -55 -149 -76 -271 -230 -314 -396 -25 -98 -31 -255
                 -13 -363 6 -41 12 -81 12 -87 2 -34 129 11 195 68 29 26 58 65 79 109 l33 68
                 49 -59 c101 -119 204 -195 281 -206 59 -8 152 121 203 282 13 39 24 76 27 83
                 3 9 19 1 50 -27 65 -57 141 -85 236 -85 43 -1 82 4 88 10 10 10 7 36 -15 114
                 -84 307 -301 519 -560 548 l-59 7 -8 44 c-22 132 -122 316 -220 407 l-33 31
                 -74 -78z" fill="currentColor"/>
-                <path d="M2903 3383 c-58 -88 -85 -116 -163 -167 -59 -39 -86 -43 -171 -25
+                    <path d="M2903 3383 c-58 -88 -85 -116 -163 -167 -59 -39 -86 -43 -171 -25
                 -64 14 -128 43 -203 93 -63 42 -57 42 -140 -8 -38 -23 -39 -26 -41 -83 -7
                 -180 -54 -400 -128 -593 -13 -36 -57 -141 -97 -235 -88 -209 -152 -397 -182
                 -541 -30 -143 -32 -399 -5 -512 71 -294 274 -549 542 -682 145 -72 232 -93
@@ -38,10 +40,11 @@
                 l41 -55 -73 -74 -73 -74 -33 32 c-18 18 -33 36 -33 42 0 5 -6 17 -14 25 -26
                 30 -59 96 -89 181 -28 77 -30 97 -31 210 0 130 18 220 65 312 l19 37 62 -31
                   c35 -16 78 -39 95 -50z" fill="currentColor"/>
-            </g>
-        </svg>
-        <h1>foodshare</h1>
-    </div>
+                </g>
+            </svg>
+            foodshare
+        </span>
+    </a>
 </header>
 </body>
 </html>
