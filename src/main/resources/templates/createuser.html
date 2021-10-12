@@ -8,8 +8,7 @@
 <div class="index-wrap"><img alt="" class="background-image" src="../img/eggplant.svg"></div>
 <div th:replace="fragments/header :: header">&nbsp</div>
 <main class="login index-wrap">
-    <form class="form-signin container"
-          oninput="pass2.setCustomValidity(pass1.value != pass2.value ? 'Passwords do not match.' : '')">
+    <form class="form-signin container">
         <div class="form-floating">
             <input class="form-control" id="floatingName" placeholder="first name" type="text">
             <label for="floatingName">first name</label>
@@ -31,21 +30,20 @@
             <label for="floatingPhone">phonenumber</label>
         </div>
         <div class="form-floating">
-            <input class="form-control" id="floatingPass" name="pass1" placeholder="password" type="password">
+            <input class="form-control" id="floatingPass" placeholder="password" type="password">
             <label for="floatingPass">password very secure</label>
         </div>
         <div class="form-floating">
-            <input class="form-control" id="floatingConfirmPass" name="pass2" placeholder="confirm password"
-                   required type="password">
+            <input class="form-control" id="floatingConfirmPass" placeholder="confirm password" type="password">
             <label for="floatingConfirmPass">confirm password</label>
         </div>
 
         <div class="row" style="padding-top: 20px">
             <div class="btn-group col-6">
-                <button class="btn btn-primary btn-form">Confirm</button>
+                <a href="/market"  class="btn btn-primary btn-form">confirm</a>
             </div>
             <div class="btn-group col-6">
-                <button class="btn btn-secondary btn-form">Cancel</button>
+                <a href="/" class="btn btn-secondary btn-form">cancel</a>
             </div>
         </div>
 
