@@ -16,6 +16,12 @@ ol, ul {
     overflow: hidden;
 }
 
+.row-head{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
 .row-b {
     border-top: solid #000 1px;
     text-align: center;
@@ -246,7 +252,8 @@ a {
     overflow: hidden;
     border-radius: 10px;
     object-fit: scale-down;
-    vertical-align: middle
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .helper {
