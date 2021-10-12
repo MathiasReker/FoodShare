@@ -220,7 +220,7 @@ a {
     color: #FFF;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 4px 4px 6px darkgrey;
+    box-shadow: 2px 2px 3px #999;
 }
 
 .float:hover {
