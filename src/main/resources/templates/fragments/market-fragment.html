@@ -28,7 +28,7 @@
             <div class="input-group mb-3"><input class="form-control input-text" placeholder="search foods.."
                                                  type="text">
                 <div class="input-group-append">
-                    <button class="btn btn-lg search-btn" type="button">
+                    <button class="btn btn-lg search-btn" type="button" onclick="alert('filters list based on input field');">
                         <span class="material-icons icon-align">&#xE8B6;</span>
                     </button>
                 </div>
@@ -45,7 +45,7 @@
                             <img src="img/p/apple.png" style="height: 100%; width: 100%; object-fit: contain">
                         </div>
 
-                        <div class="col-10" th:text="${post.getDescription()}"></div>
+                        <div class="col-10" th:text="${post.getDescription()}" onclick="alert('displays pop with further info')"></div>
 
 
                     </div>

@@ -13,7 +13,7 @@
         <div class="form-floating">
             <div class="image-frame">
                 <span class="helper"></span>
-                <img class="image-form" th:src="${'img/p/cake2.png'}">
+                <img class="image-form" th:src="${'img/p/apple.png'}" onclick="alert('prompts for new picture')">
             </div>
         </div>
 
@@ -47,10 +47,10 @@
 
         <div class="row" style="padding-top: 20px">
             <div class="btn-group col-6">
-                <button class="btn btn-primary btn-form">Confirm</button>
+                <a class="btn btn-primary btn-form" href="/market" onclick="alert('creates new food post')">confirm</a>
             </div>
             <div class="btn-group col-6">
-                <button class="btn btn-secondary btn-form">Cancel</button>
+                <a class="btn btn-secondary btn-form" href="/market">cancel</a>
             </div>
         </div>
 
