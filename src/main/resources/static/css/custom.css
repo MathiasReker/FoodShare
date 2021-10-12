@@ -48,7 +48,7 @@ body {
 .container-post:hover {
     border-radius: 10px;
     background-color: #bdece5;
-    box-shadow: 0 5px 15px 0 #FF781F;
+    box-shadow: 0 5px 15px 0 #114d4d;
 }
 
 .btn-icon {
@@ -82,6 +82,24 @@ body {
     height: 100%;
 }
 
+.btn-header{
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+}
+
+.col-head{
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1rem;
+}
+
+.header-hover:hover{
+    color: #79D0C6;
+}
+
 header {
     text-align: center;
     background-color: #114d4d;
@@ -109,7 +127,6 @@ section {
 
 .form-control {
     display: block;
-    height: 100%;
     line-height: 2;
     background-color: white;
     border: 1px solid #79D0C6
@@ -144,6 +161,7 @@ section {
     border: solid #79D0C6 1px;
     background-color: #a9a9a9;
     text-align: center;
+    cursor: pointer;
 }
 
 .market-row {
@@ -199,15 +217,14 @@ a {
     bottom: 40px;
     right: 40px;
     background-color: #114d4d;
-    color: #fff;
+    color: #FFF;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 4px 4px 6px darkgrey;
 }
 
 .float:hover {
-    background-color: #FF781F;
-    color: #000;
+    color: #79D0C6;
 }
 
 .my-float {

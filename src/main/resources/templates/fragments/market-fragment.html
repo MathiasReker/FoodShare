@@ -16,19 +16,17 @@
 <div class="lobby index-wrap" th:fragment="market-fragments">
     <div class="container">
         <div class="row market-row">
-            <div class="col-6 market-tabs">
-                <a onclick="changeHtml('/my-foods')">myfoods</a>
+            <div class="col-6 market-tabs" onclick="changeHtml('/my-foods')">
+                <a>myfoods</a>
             </div>
-            <div class="col-6 market-tabs active">
-                <a onclick="changeHtml('/market-fragment')">market</a>
+            <div class="col-6 market-tabs active" onclick="changeHtml('/market-fragment')">
+                <a>market</a>
             </div>
         </div>
         <div class="container justify-content-center">
-
-            <div class="input-group mb-3"><input class="form-control input-text" placeholder="search foods.."
-                                                 type="text">
+            <div class="input-group mb-3"><input class="form-control input-text" placeholder="search foods.." type="text">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-warning btn-lg search-btn" type="button">
+                    <button class="btn btn-lg search-btn" type="button" onclick="alert('filters list based on input field');">
                         <span class="material-icons icon-align">&#xE8B6;</span>
                     </button>
                 </div>
@@ -45,7 +43,7 @@
                             <img src="img/p/apple.png" style="height: 100%; width: 100%; object-fit: contain">
                         </div>
 
-                        <div class="col-10" th:text="${post.getDescription()}"></div>
+                        <div class="col-10" th:text="${post.getDescription()}" onclick="alert('displays pop with further info')"></div>
 
 
                     </div>
